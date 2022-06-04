@@ -7,15 +7,24 @@ import Contacto from './diseño/contacto';
 
 import NavBarExample from './componentes/NavBar';
 import ItemListContainer from './diseño/ItemListContainer';
+import ItemCount from './diseño/ItemCount';
 
 function App() {
+
+  const onAdd = (count) => {
+  alert("Agregaste al carrito");
+  }
+
   return (
     <div className="App">
 
 <BrowserRouter>
 <Routes>
   <Route path='/' element={ <NavBarExample /> }>
-    <Route index element={ <ItemListContainer greeting={'Hola estoy saludos por prop'}/> } />
+    <Route index element={ <>
+    <ItemListContainer greeting={'Productos de Ferre Global'}/> 
+    <ItemCount inicial={1} max={10} onAdd={onAdd} />
+    </>} />
     <Route path='ofertas' element={ <Ofertas /> } />
     <Route path='contacto' element={ <Contacto /> } />
     <Route path='*' element={ <Navigate replace to="/"/> }/>
