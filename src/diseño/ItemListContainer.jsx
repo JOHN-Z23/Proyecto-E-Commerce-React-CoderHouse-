@@ -1,31 +1,16 @@
-import React, { useEffect, useState, resultado } from 'react'
+import React, { useEffect, useState } from 'react'
 import ItemList from './ItemList'
 
 const ItemListContainer = ({ greeting }) => {
- const [personajes, setPersonajes] = useState([])
+ const [product, setProduct] = useState([])
 
  useEffect(() => {
-  const pagara = new Promise ((res, rej) => {
-    setTimeout(() => {
-      res([
-        {id: '', name: '', status: '' },
-        {id: '', name: '', status: '' },
-        {id: '', name: '', status: '' },
-        {id: '', name: '', status: '' },
-        {id: '', name: '', status: '' },
-      ]);
-    }, 3000);
-  });
-
-
-    fetch("https://rickandmortyapi.com/api/character")
+    fetch("/productos.json")
       .then(res => res.json())
-      .then(res => setPersonajes(res.results))
+      .then(res => setProduct(res.results))
       .catch(error => console.error("Error:", error))
  
 }, [])
-
-
 
   return (
     <>
@@ -33,15 +18,9 @@ const ItemListContainer = ({ greeting }) => {
   <div>{greeting}</div>
 
   <div>
-    <ItemList personajes={personajes}/>
+    <ItemList product={product}/>
   </div>
 
-  <div>
-   {resultado &&
-   resultado.map((item) => (
-     <p>Personaje: {item.id}</p>
-   ))}
-   </div>
 
   </>
   )
