@@ -10,5 +10,4 @@ const ItemList = ({product})=> {
      </>
   )
 }
-
 export default ItemList

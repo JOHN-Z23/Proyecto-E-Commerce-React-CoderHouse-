@@ -1,10 +1,8 @@
-{
-    "estado" : " éxito " ,
-    "elementos" : [{
+[{
             "identificación" : 1 ,
             "título" : " Fresadora " ,
             "precio" : 6500 ,
-            "imagen" : " img/keyboard-1.jpg " ,
+            "imagen" : "./diseño/img/keyboard-1.jpg " ,
             "categoría" : " dewal "
         },
         {
@@ -38,7 +36,7 @@
         },
         {
             "identificación" : 6 ,
-            "title" : " Ingletadora " ,
+            "título" : " Ingletadora " ,
             "precio" : 2500 ,
             "imagen" : " img/keyboard-6.jpg " ,
             "categoría" : " daewo "
@@ -60,7 +58,7 @@
         },
         {
             "identificación" : 9 ,
-            "title" : " Base para amoladora " ,
+            "título" : " Base para amoladora " ,
             "precio" : 3900 ,
             "imagen" : " img/keyboard-9.jpg " ,
             "categoría" : " bahco "
@@ -71,20 +69,6 @@
             "precio" : 2900 ,
             "imagen" : " img/keyboard-10.jpg " ,
             "categoría" : " cachiporra "
-        },
-        {
-            "identificación" : 11 ,
-            "title" : " Set de 4 Pinzas " ,
-            "precio" : 4100 ,
-            "imagen" : " img/keyboard-11.jpg " ,
-            "categoría" : " irimo "
-        },
-        {
-            "identificación" : 12 ,
-            "title" : " Caja de Herramientas " ,
-            "precio" : 4600 ,
-            "imagen" : " img/keyboard-12.jpg " ,
-            "categoría" : " daewo "
-        }
-    ]
-  }
+        } 
+]
+  

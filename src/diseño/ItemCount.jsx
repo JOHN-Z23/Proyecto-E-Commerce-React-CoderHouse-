@@ -13,7 +13,6 @@ export default function ItemCount({inicial, max, onAdd}) {
    setCount(inicial)
   }
 
-
   return (
     <div className="botonesCarrito">
 

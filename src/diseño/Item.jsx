@@ -15,6 +15,7 @@ export default function Item({product}) {
       Categoria:{categoría}
     </Card.Text>
     <Button variant="primary">Ver detalle</Button>
+    
   </Card.Body>
 </Card>
   )

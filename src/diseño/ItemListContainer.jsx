@@ -7,24 +7,18 @@ const ItemListContainer = ({ greeting }) => {
  useEffect(() => {
     fetch("/productos.json")
       .then(res => res.json())
-      .then(res => setProduct(res.results))
+      .then(res => setProduct(res))
       .catch(error => console.error("Error:", error))
  
 }, [])
 
   return (
-    <>
-
+  <>
   <div>{greeting}</div>
-
   <div>
     <ItemList product={product}/>
   </div>
-
-
   </>
   )
-
 }
-
 export default ItemListContainer
