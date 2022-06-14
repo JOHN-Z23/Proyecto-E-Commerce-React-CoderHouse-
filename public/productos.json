@@ -2,8 +2,9 @@
             "identificación" : 1 ,
             "título" : " Fresadora " ,
             "precio" : 6500 ,
-            "imagen" : "./diseño/img/keyboard-1.jpg " ,
-            "categoría" : " dewal "
+            "imagen" : " img/keyboard-1.jpg " ,
+            "categoría" : " dewal ",
+            "descripción" : " asasfsafasfasfasfasfsaf " 
         },
         {
             "identificación" : 2 ,

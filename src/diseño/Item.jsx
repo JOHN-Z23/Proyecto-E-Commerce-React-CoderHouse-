@@ -1,6 +1,7 @@
 
 import React from 'react'
 import { Button, Card } from 'react-bootstrap'
+import ItemDetailContainer from './ItemDetailContainer'
 
 export default function Item({product}) {
     const { título, precio, imagen, categoría} = product
@@ -14,7 +15,7 @@ export default function Item({product}) {
       Precio: {precio}<br/>
       Categoria:{categoría}
     </Card.Text>
-    <Button variant="primary">Ver detalle</Button>
+    <Button onClick={(ItemDetailContainer)} variant="primary">Ver detalle</Button>
     
   </Card.Body>
 </Card>
